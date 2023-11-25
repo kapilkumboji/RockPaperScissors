@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="V (1).png" class="logo">
+        <div class="box">
+                <h1 class="login">LOGIN</h1>
+                <div class="user">
+                    <img src="person_FILL0_wght400_GRAD0_opsz24.svg" style="display: inline;" class="acclogo">
+                    <p style="display: inline;" class="username">Username*</p>
+                    <input type="text" style="display: inline;" placeholder="Enter Username" onkeydown="loginnn(event);" class="Inputu">
+                </div>
+                <br>
+                <div class="user">
+                    <img src="key_FILL0_wght400_GRAD0_opsz24.svg" class="acclogo">
+                    <p style="display: inline;" class="username">Passsword*</p>
+                    <input type="password" placeholder="Enter Password" onkeydown="loginnn(event);" class="Inputp">
+                </div>
+                <p class="error"></p>
+                <br>
+                <button class="loginBtn" onclick="loginn();">Login</button>
+        </div>
+    </div>
+    <script>
+
+        function loginn()
+        {
+            
+            const inputu=document.querySelector('.Inputu').value;
+            const inputp=document.querySelector('.Inputp').value;
+            let regu = localStorage.getItem('username');
+            let regp = localStorage.getItem('password');
+            let error=document.querySelector('.error');
+            if(inputu===regu){
+                if(inputp===regp){
+                    window.location.href='rps.html';
+                }
+                else{
+                    error.innerHTML='Password is incorrect!!!';
+                }
+            }
+            else{
+                    error.innerHTML='Username is incorrect!!!';
+                }
+        }
+        function loginnn(event)
+        {
+            if(event.key === 'Enter')
+            {
+                loginn();
+            }
+        }
+    </script>
+</body>
+</html>

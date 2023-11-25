@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors/game</title>
+    <link rel="stylesheet" href="rps.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full">
+        <h1>Rock Paper Scissors</h1>
+        <div class="buttons">
+            <div class="b1">
+                <button class="button2" onclick="
+                comp=Math.floor(Math.random()*3);
+                if(comp===0)
+                {
+                    alert('computer chose rock-Tie.');
+                }
+                else if(comp===1)
+                {
+                    alert('computer chose paper-You Lose.');
+                }
+                else
+                {
+                    alert('computer chose scissors-You Win.');
+                }">
+                <p>ROCK</p>
+                </button>
+            </div>
+            <div class="b2">
+                <button class="button2" onclick="
+                comp=Math.floor(Math.random()*3);
+                if(comp===1)
+                {
+                    alert('computer chose paper-Tie.');
+                }
+                else if(comp===2)
+                {
+                    alert('computer chose scissors-You Lose.');
+                }
+                else
+                {
+                    alert('computer chose rock-You Win.');
+                }">
+                <p>PAPER</p>
+                </button>
+            </div>
+            <div class="b3">
+                <button class="button2" onclick="
+                comp=Math.floor(Math.random()*3);
+                if(comp===2)
+                {
+                    alert('computer chose scissors-Tie.');
+                }
+                else if(comp===0)
+                {
+                    alert('computer chose rock-You Lose.');
+                }
+                else
+                {
+                    alert('computer chose paper-You Win.');
+                }">
+                <p>SCISSORS</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const comp;
+    </script>
+</body>
+</html>

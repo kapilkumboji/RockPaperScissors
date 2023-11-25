@@ -1,0 +1,55 @@
+body{
+    background: #c4c4c4;
+}
+h1{
+    padding-left: 230px;
+    font-family:Pixelify Sans;
+    color: #242323;
+    font-size: 100px;
+}
+p{
+    font-size: 40px;
+    padding-right: 3px;
+    color: aliceblue;
+    font-family: Pixelify Sans;
+}
+.pp{
+    font-size: 40px;
+    padding-right: 3px;
+    color: rgb(255, 0, 0);
+    font-family: Pixelify Sans;
+    margin-left: 600px;
+}
+button{
+    height: 300px;
+    width: 300px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 100px;
+}
+.button2:hover{
+    background: #494949;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.b1{
+    flex: 1;
+
+}
+.b2{
+    flex: 1;
+
+}
+.button2{
+    border-color: aliceblue;
+    border-radius: 100px;
+    border-width: 7px;
+    border-style: solid;
+    background: #242323;
+}
+.b3{
+    flex: 1;
+}
